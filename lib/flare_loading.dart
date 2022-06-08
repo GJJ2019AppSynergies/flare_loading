@@ -1,6 +1,5 @@
 library flare_loading;
 
-import 'package:flare_flutter/base/animation/actor_animation.dart';
 import 'package:flare_flutter/flare.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controller.dart';
@@ -114,7 +113,7 @@ class _FlareLoadingState extends State<FlareLoading> with FlareController {
 
   _finished() {
     if (!_isLoading) {
-      WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+      WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
         if (_isSuccessful) {
           widget.onSuccess(_data);
         } else {

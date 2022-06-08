@@ -18,7 +18,6 @@ environment:
 
 dependencies:
   flare_loading:
-    path: '..'
   flutter:
     sdk: flutter
 
